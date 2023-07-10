@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: calc(100vw / 1728 * 10);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+[data-hidden] {
+    opacity: 0;
+}
+
+html.lenis {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+    pointer-events: none;
+}
+
+.container {
+    max-width: 156.6rem;
+    margin-inline: auto;
+    padding-inline: 2.4rem;
+}
+
+h1,
+h2 {
+    font-size: 16rem;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    line-height: 1;
+}
+
+p {
+    font-size: 4.8rem;
+    letter-spacing: -0.03em;
+    line-height: 1.5;
+}
+
+.hero {
+    display: grid;
+    place-items: center;
+    height: 129.8rem;
+    background-color: white;
+}
+
+.hero__title {
+    text-align: center;
+    max-width: 10ch;
+    z-index: 2;
+    mix-blend-mode: difference;
+    color: white;
+}
+
+.hero__title div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img {
+    position: absolute;
+}
+
+.hero img:nth-child(1) {
+    width: 37.4rem;
+    height: 56.1rem;
+    top: 0;
+    left: 8rem;
+}
+
+.hero img:nth-child(2) {
+    width: 24.1rem;
+    height: 6.6rem;
+    top: 0;
+    left: 61.1rem;
+}
+.hero img:nth-child(3) {
+    width: 35.1rem;
+    height: 23.4rem;
+    top: 0;
+    right: 8rem;
+}
+.hero img:nth-child(4) {
+    width: 37.4rem;
+    height: 55.9rem;
+    top: 16.8rem;
+    right: 47.8rem;
+}
+.hero img:nth-child(5) {
+    width: 35.1rem;
+    height: 23.4rem;
+    top: 65.9rem;
+    left: 47.8rem;
+}
+.hero img:nth-child(6) {
+    width: 24.1rem;
+    height: 36.1rem;
+    top: 93.7rem;
+    left: 21.3rem;
+}
+.hero img:nth-child(7) {
+    width: 63.9rem;
+    height: 42.5rem;
+    top: 81.5rem;
+    right: 8rem;
+}
+
+.text-block {
+    margin-top: 24rem;
+    margin-bottom: 24rem;
+}
+
+.text-block__content {
+    max-width: 44ch;
+}
+
+.fullwidth-image {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    clip-path: polygon(5% 10%, 95% 10%, 95% 90%, 5% 90%);
+}
+
+.fullwidth-image img {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+    /* transform: translateY(-20%); */
+}
+
+.fullwidth-image__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background-color: black;
+    opacity: 0;
+}
+
+.fullwidth-image__text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    color: white;
+}
+
+.fullwidth-image h2 {
+    font-size: 6.4rem;
+    margin-bottom: 1.6rem;
+}
+
+.fullwidth-image p {
+    font-size: 2.4rem;
+    max-width: 48ch;
+}
+
+.join-us {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: 24rem 0;
+}
+
+.join-us__inner {
+    display: grid;
+    place-items: center;
+}
+
+.join-us__title {
+    max-width: 10ch;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.join-us__text {
+    opacity: 0.5;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 6.4rem;
+}
+
+.mission {
+    display: inline-block;
+    position: relative;
+}
+
+.mission svg {
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+}
+
+button {
+    border: none;
+    background-color: black;
+    padding: 1.6rem 4.8rem;
+    font-size: 2.4rem;
+    color: white;
+    border-radius: 8px;
+    font-family: inherit;
+    letter-spacing: -0.01em;
+}
+.text__effect {
+    position: relative;
+}
+.text__overlay {
+    display: block;
+    position: absolute;
+    height: 101%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0.7;
+    transform-origin: center right;
+}
